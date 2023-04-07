@@ -26,19 +26,23 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className={styles.socials}>
-				<a href='https://instagram.com' target='_blank' rel='noreferrer'>
+				<a
+					href='https://instagram.com'
+					target='_blank'
+					rel='noreferrer'
+				>
 					<svg className='icon'>
-						<use xlinkHref='public/sprite.svg#instagram' />
+						<use xlinkHref='./sprite.svg#instagram' />
 					</svg>
 				</a>
 				<a href='https://facebook.com' target='_blank' rel='noreferrer'>
 					<svg className='icon'>
-						<use xlinkHref='public/sprite.svg#facebook' />
+						<use xlinkHref='./sprite.svg#facebook' />
 					</svg>
 				</a>
 				<a href='https://youtube.com' target='_blank' rel='noreferrer'>
 					<svg className='icon'>
-						<use xlinkHref='public/sprite.svg#youtube' />
+						<use xlinkHref='./sprite.svg#youtube' />
 					</svg>
 				</a>
 			</div>

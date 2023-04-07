@@ -27,7 +27,7 @@ const Header = () => {
 				<form className={styles.form}>
 					<div className={styles.icon}>
 						<svg className='icon'>
-							<use xlinkHref='public/sprite.svg#search' />
+							<use xlinkHref='./sprite.svg#search' />
 						</svg>
 					</div>
 					<div className={styles.input}>
@@ -45,12 +45,12 @@ const Header = () => {
 				<div className={styles.account}>
 					<Link to={ROUTES.HOME} className={styles.favourites}>
 						<svg className={styles['icon-fav']}>
-							<use xlinkHref='public/sprite.svg#heart' />
+							<use xlinkHref='./sprite.svg#heart' />
 						</svg>
 					</Link>
 					<Link to={ROUTES.CART} className={styles.cart}>
 						<svg className={styles['icon-cart']}>
-							<use xlinkHref='public/sprite.svg#bag' />
+							<use xlinkHref='./sprite.svg#bag' />
 						</svg>
 						<span className={styles.count}>2</span>
 					</Link>
