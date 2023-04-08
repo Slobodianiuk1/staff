@@ -1,5 +1,3 @@
-import React from 'react'
-
 import styles from '../../styles/Footer.module.css'
 
 import LOGO from '../../images/logo.svg'
@@ -26,11 +24,7 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className={styles.socials}>
-				<a
-					href='https://instagram.com'
-					target='_blank'
-					rel='noreferrer'
-				>
+				<a href='https://instagram.com' target='_blank' rel='noreferrer'>
 					<svg className='icon'>
 						<use xlinkHref='./sprite.svg#instagram' />
 					</svg>

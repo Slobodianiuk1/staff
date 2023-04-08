@@ -1,28 +1,28 @@
-import Header from './components/Header/Header'
-import AppRoutes from './components/Routes/Routes'
-import Footer from './components/Footer/Footer'
-import Sidebar from './components/Sidebar/Sidebar'
-import { getCategories } from './store/categories/categoriesAction'
-import { useEffect } from 'react'
-import { useAppDispatch } from './hooks/store.hooks'
+import { useEffect } from "react";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import AppRoutes from "./components/Routes/Routes";
+import Sidebar from "./components/Sidebar/Sidebar";
+import { getCategories } from "./features/categories/categoriesAction";
+import { useAppDispatch } from "./hooks/store.hooks";
 
 function App() {
-	const dispatch = useAppDispatch()
+  const dispatch = useAppDispatch();
 
-	useEffect(() => {
-		dispatch(getCategories())
-	}, [dispatch])
+  useEffect(() => {
+    dispatch(getCategories());
+  }, [dispatch]);
 
-	return (
-		<div className='app'>
-			<Header />
-			<div className='container'>
-				<Sidebar />
-				<AppRoutes />
-			</div>
-			<Footer />
-		</div>
-	)
+  return (
+    <div className="app">
+      <Header />
+      <div className="container">
+        <Sidebar />
+        <AppRoutes />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,8 +1,6 @@
-import React from 'react'
-
-import styles from '../../styles/Sidebar.module.css'
 import { NavLink } from 'react-router-dom'
 import { useAppSelector } from '../../hooks/store.hooks'
+import styles from '../../styles/Sidebar.module.css'
 
 const Sidebar = () => {
 	const { list } = useAppSelector(({ categories }) => categories)
@@ -11,14 +9,12 @@ const Sidebar = () => {
 		<aside className={styles.sidebar}>
 			<div className={styles.title}>CATEGORIES</div>
 			<nav>
-				<ul className={styles.menu}>
+				<ul className={styles.title}>
 					{list.map(({ id, name }) => (
 						<li key={id}>
 							<NavLink
 								className={({ isActive }) =>
-									`${styles.link} ${
-										isActive ? styles.active : ''
-									}`
+									`${styles.link} ${isActive ? styles.active : ''}`
 								}
 								to={`/categories/${id}`}
 							>
