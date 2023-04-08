@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-import styles from "../../styles/Header.module.css";
+import styles from "../../common/styles/Header.module.css";
 
-import { ROUTES } from "../../utils/routes";
+import { ROUTES } from "../../utils/routes/routes";
 
-import AVATAR from "../../images/avatar.jpg";
-import LOGO from "../../images/logo.svg";
+import AVATAR from "../../common/assets/images/avatar.jpg";
+import LOGO from "../../common/assets/images/logo.svg";
 
 const Header = () => {
   return (
@@ -40,7 +40,7 @@ const Header = () => {
               value=""
             />
           </div>
-          {false && <div className={styles.box}>123</div>}
+          {/*{false && <div className={styles.box}>123</div>}*/}
         </form>
         <div className={styles.account}>
           <Link to={ROUTES.HOME} className={styles.favourites}>
@@ -52,7 +52,7 @@ const Header = () => {
             <svg className={styles["icon-cart"]}>
               <use xlinkHref="./sprite.svg#bag" />
             </svg>
-            <span className={styles.count}>2</span>
+            <span className={styles.count}>3</span>
           </Link>
         </div>
       </div>
